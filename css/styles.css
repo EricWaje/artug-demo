@@ -86,6 +86,7 @@
     line-height: var(--unnamed-line-spacing-32);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
+    margin-bottom: 0px;
 }
 .subtitulo {
     font-family: var(--unnamed-font-family-helvetica-neue);
@@ -95,6 +96,7 @@
     line-height: var(--unnamed-line-spacing-36);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--negro-artug);
+    margin-bottom: 0px;
 }
 .titular-bold {
     font-family: var(--unnamed-font-family-helvetica-neue);
@@ -104,6 +106,7 @@
     line-height: var(--unnamed-line-spacing-72);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
+    margin-bottom: 0px;
 }
 .titular-regular {
     font-family: var(--unnamed-font-family-helvetica-neue);
@@ -113,6 +116,7 @@
     line-height: var(--unnamed-line-spacing-72);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
+    margin-bottom: 0px;
 }
 
 /* ---------- ESTILOS COMUNES A TODAS LAS PAGINAS ---------- */
