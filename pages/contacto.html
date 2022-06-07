@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="../css/styles.css" />
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <header id="contacto">
+            <nav class="navbar navbar-expand-lg" id="menu">
+                <div class="container">
+                    <a href="../index.html"
+                        ><img src="../media/logo.svg" alt="logo" class="w-75"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-center align-items-center"
+                        id="navbarSupportedContent"
+                    >
+                        <ul
+                            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 d-flex justify-content-center"
+                        >
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="./empresa.html"
+                                    >Empresa</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="./empresa.html#empresa-politica"
+                                    >Políticas</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="./servicios.html"
+                                    >Servicios</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="./flota.html"
+                                    >Flota</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="./contacto.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="nav-link" aria-current="page" href="#"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div></div>
+            <div class="container">
+                <h2 class="seccion">Contacto</h2>
+                <p class="hero-contacto">
+                    Edificio CHACOFI <br />
+                    25 de Mayo 555 – Piso 22 <br />C1002ABK<br />
+                    Buenos Aires, Argentina <br />+54 11 3990 7400
+                </p>
+            </div>
+            <div></div>
+        </header>
+        <main>
+            <section class="container" id="mapas-form">
+                <div
+                    class="row justify-content-center align-items-center mt-5 mb-5"
+                >
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-4x3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.776086822584!2d-58.36839548480656!3d-34.609823165328095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352bd9de9ced%3A0x3c03f884b0459919!2sRUA%20Remolcadores%20Unidos%20Argentinos%20S.A.M.%20y%20C.!5e0!3m2!1ses-419!2sar!4v1654458319753!5m2!1ses-419!2sar"
+                                width="400"
+                                height="300"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-1">
+                                <label
+                                    for="nombreApellido"
+                                    class="form-label"
+                                ></label>
+                                <input
+                                    type="name"
+                                    class="form-control"
+                                    id="nombreApellido"
+                                    aria-describedby="nameHelp"
+                                    placeholder="Nombre y Apellido"
+                                />
+                            </div>
+                            <div class="mb-1">
+                                <label for="email" class="form-label"></label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Mail"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="form-label"></label>
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="phone"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Teléfono"
+                                />
+                            </div>
+
+                            <textarea
+                                class="form-control form-mensaje mb-4"
+                                placeholder="Tu mensaje"
+                                id="floatingTextarea2"
+                                style="height: 100px"
+                            ></textarea>
+                            <div class="d-flex justify-content-center">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary btn-lg boton-primario"
+                                >
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section class="container">
+                            <div class="row pb-4">
+                                <div class="col-lg-3">
+                                    <img src="../media/logo.svg" alt="" />
+                                </div>
+                                <div class="col-lg-3 mapa-ubicacion">
+                                    <h3>Mapa de sitio</h3>
+                                    <div class="d-flex flex-column">
+                                        <ul>
+                                            <li><a href="">Empresa</a></li>
+                                            <li><a href="">Políticas</a></li>
+                                            <li><a href="">Servicios</a></li>
+                                            <li><a href="">Flota</a></li>
+                                            <li><a href="">Clientes</a></li>
+                                            <li><a href="">Contacto</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mapa-ubicacion">
+                                    <h3>Ubicación</h3>
+                                    <div>
+                                        <p>
+                                            Edificio CHACOFI <br />
+                                            25 de Mayo 555 – Piso 22 <br />
+                                            C1002ABK <br />Buenos Aires,
+                                            Argentina
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3>Contacto</h3>
+                                    <div class="d-flex flex-column">
+                                        <div
+                                            class="d-flex align-items-center mb-2"
+                                        >
+                                            <i class="fa-solid fa-phone"></i>
+                                            <p>+54 11 3990 7400</p>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center mb-2"
+                                        >
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <p>Información</p>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center mb-2"
+                                        >
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <p>Compras</p>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center mb-2"
+                                        >
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <p>Proveedores</p>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center mb-2"
+                                        >
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <p>Comité de ética e integridad</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <section class="copy">
+                            <h5>©2022 ARtug</h5>
+                            <h5>Diseñado y desarrollado por LUMBA</h5>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-------------- SCRIPTS ------------>
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/70658517b8.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- BOOTSTRAP 5.2 -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+        <!-- SCRIPT LOCAL -->
+        <script src="../js/app.js"></script>
+    </body>
+</html>

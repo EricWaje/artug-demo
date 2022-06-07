@@ -94,7 +94,7 @@
     font-family: var(--unnamed-font-family-roboto);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-24);
+    font-size: var(--unnamed-font-size-22);
     line-height: var(--unnamed-line-spacing-32);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -140,6 +140,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 9000;
 }
 
 .nav-link {
@@ -147,14 +148,23 @@
         var(--unnamed-font-weight-normal) 22px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-helvetica-neue);
     color: var(--unnamed-color-ffffff);
-    margin: 0px 10px;
+    margin: 0px 16px;
+    padding: 0px !important;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-link.active {
+.nav-link:hover {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) 26px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-weight-normal) 22px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-helvetica-neue);
     color: var(--unnamed-color-ffffff);
+}
+
+.navbar-nav .nav-link.active {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) 22px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-family-helvetica-neue);
+    color: white;
 }
 
 .navbar .linkedin {
@@ -204,7 +214,7 @@ footer {
 
 .copy h5 {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 footer h3 {
@@ -218,7 +228,7 @@ footer h3 {
 
 footer p {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0px;
 }
 
@@ -230,7 +240,7 @@ footer ul {
 
 footer a {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     margin: 4px 0px;
     transition: all 0.3s ease-in-out;
@@ -302,9 +312,15 @@ footer img {
     border: none;
     outline: none;
 }
+
+.accordion {
+    z-index: -1;
+}
+
 .accordion-header {
     border: none;
     outline: none;
+    z-index: -1;
 }
 
 .accordion-button:focus {
@@ -318,6 +334,7 @@ footer img {
     margin: 0px 0px 35px 0px;
     border: none;
     box-shadow: 0px 2px 3px 1px rgba(127, 127, 127, 0.478);
+    z-index: -1;
 }
 
 .accordion-button:not(.collapsed) {
@@ -411,10 +428,12 @@ footer img {
     color: #176bfc;
     font-size: 40px;
     margin-bottom: 10px;
+    letter-spacing: var(--unnamed-character-spacing-0-31);
 }
 
 #empresa-politica h4 {
-    font-size: 18px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--tipografia);
     margin-bottom: 10px;
 }
 #empresa-politica .texto-logos {
@@ -437,7 +456,120 @@ footer img {
 }
 
 #empresa-cards .container-box p {
-    color: #176bfc;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-176bfc);
+}
+
+/* --------------------------- SERVICIOS.HTML -----------------------------------*/
+
+#servicios-header {
+    background-image: url('../media/Fondo_Servicios.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+#servicios {
+    padding: 30px 0px;
+    position: relative;
+    top: -91px;
+    z-index: 900;
+}
+
+#servicios h2 {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) 42px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-176bfc);
+}
+
+#servicios .description {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-14);
+}
+
+#servicios .container-box {
+    /* border: 1px solid black; */
+    box-shadow: 0px 2px 3px 1px rgba(127, 127, 127, 0.478);
+    padding: 10px 15px;
+    max-width: 32.5%;
+    background-color: rgba(255, 255, 255, 0.679);
+}
+
+#servicios .arrow {
+    border: 2px solid var(--unnamed-color-176bfc);
+    padding: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#servicios .arrow i:hover {
+    transform: rotate(90deg);
+}
+
+#servicios i {
+    color: var(--unnamed-color-176bfc);
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.article-servicios h3 {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) 22px/29px
+        var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--negro-artug);
+}
+
+.article-servicios {
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-servicios.medio {
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--unnamed-color-176bfc-with-opacity);
+}
+
+/* --------------------------- CONTACTO.HTML -----------------------------------*/
+
+#contacto {
+    background-image: url('../media/fondo_contacto.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+#contacto .hero-contacto {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-12);
+    color: var(--unnamed-color-ffffff);
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 /* ---------- MEDIA QUERIES --------- */
