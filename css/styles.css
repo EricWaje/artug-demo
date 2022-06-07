@@ -1,4 +1,44 @@
+/* ROBOTO */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* OPEN SANS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* HELVETICA */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/helvetica-black.ttf);
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/helvetica-bold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/helvetica-medium.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/helvetica-light.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/helvetica-thin.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
 
 * {
     box-sizing: border-box;
@@ -16,12 +56,13 @@
     --negro-artug: #1a171b;
 
     /* Font/text values */
-    --unnamed-font-family-helvetica-neue: Helvetica Neue;
+    --unnamed-font-family-helvetica-neue: 'Helvetica Neue';
     --unnamed-font-family-roboto: 'Roboto', sans-serif;
     --unnamed-font-style-normal: normal;
     --unnamed-font-weight-bold: bold;
     --unnamed-font-weight-normal: normal;
     --unnamed-font-size-20: 20px;
+    --unnamed-font-size-22: 22px;
     --unnamed-font-size-24: 24px;
     --unnamed-font-size-28: 28px;
     --unnamed-font-size-32: 32px;
@@ -79,14 +120,31 @@
     text-transform: var(--unnamed-text-transform-titlecase);
 }
 
-.seccion {
-    font-family: var(--unnamed-font-family-helvetica-neue);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-42);
-    line-height: var(--unnamed-line-spacing-52);
+.seccion-regular {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
+        var(--unnamed-line-spacing-72) var(--unnamed-font-family-helvetica-neue);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
+    margin-bottom: 0px;
+}
+
+.seccion-bold {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-62) /
+        var(--unnamed-line-spacing-72) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-31);
+    color: var(--unnamed-color-ffffff);
+}
+
+.texto-chico {
+    font-family: var(--unnamed-font-family-roboto);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-32);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--tipografia);
     margin-bottom: 0px;
 }
 
@@ -94,7 +152,7 @@
     font-family: var(--unnamed-font-family-roboto);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-22);
+    font-size: var(--unnamed-font-size-24);
     line-height: var(--unnamed-line-spacing-32);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -144,8 +202,8 @@
 }
 
 .nav-link {
-    font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 22px / var(--unnamed-line-spacing-52)
+    font: var(--unnamed-font-style-normal) 400 var(--unnamed-font-weight-normal)
+        26px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-helvetica-neue);
     color: var(--unnamed-color-ffffff);
     margin: 0px 16px;
@@ -162,7 +220,7 @@
 
 .navbar-nav .nav-link.active {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) 22px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-weight-bold) 26px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-helvetica-neue);
     color: white;
 }
@@ -180,6 +238,11 @@ form {
 }
 
 form .form-control {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--tipografia);
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 0px;
@@ -214,7 +277,7 @@ footer {
 
 .copy h5 {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 footer h3 {
@@ -227,9 +290,14 @@ footer h3 {
 }
 
 footer p {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) 18px/28px
+        var(--unnamed-font-family-helvetica-neue);
+    color: var(--unnamed-color-ffffff);
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 0px;
+    font-weight: 400;
 }
 
 footer ul {
@@ -239,11 +307,15 @@ footer ul {
 }
 
 footer a {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) 18px / var(--unnamed-line-spacing-32)
+        var(--unnamed-font-family-helvetica-neue);
+    color: var(--unnamed-color-ffffff);
     color: white;
-    font-size: 16px;
     text-decoration: none;
     margin: 4px 0px;
     transition: all 0.3s ease-in-out;
+    font-weight: 400;
 }
 
 footer a:hover {
@@ -269,7 +341,7 @@ footer img {
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--unnamed-color-ffffff);
     text-align: center;
-
+    font-weight: 400;
     opacity: 1;
 }
 
@@ -304,13 +376,19 @@ footer img {
     align-items: center;
 }
 
-#home-servicios h2 {
+/* #home-servicios h2 {
     margin-bottom: 0px;
-}
+    font-family: 'Helvetica neue';
+} */
 
 #home-servicios .accordion-body {
     border: none;
     outline: none;
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-32) 'Open Sans';
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--tipografia);
 }
 
 .accordion {
@@ -385,6 +463,14 @@ footer img {
     min-height: 64vh;
 }
 
+#home-contacto p {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-12);
+    color: var(--tipografia);
+}
+
 /* --------------------------- EMPRESA.HTML -----------------------------------*/
 
 #empresa {
@@ -409,7 +495,17 @@ footer img {
 
 #empresa-historia .texto-logos p {
     /* width: 80%; */
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) / 34px
+        Open Sans;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--tipografia);
+    font-weight: 300;
     margin-bottom: 30px;
+}
+
+#empresa-historia .texto-logos span {
+    font-weight: bold;
 }
 
 #empresa-historia .texto-logos img {
@@ -432,10 +528,22 @@ footer img {
 }
 
 #empresa-politica h4 {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
     margin-bottom: 10px;
 }
+
+#empresa-politica p {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--tipografia);
+}
+
 #empresa-politica .texto-logos {
     padding: 0% 4.5% !important;
 }
@@ -451,11 +559,14 @@ footer img {
     box-shadow: 0px 2px 3px 1px rgba(127, 127, 127, 0.478);
     padding: 10px 15px;
     width: 24%;
-    margin: 8px 4px;
+    margin: 0px 4px;
     background-color: rgba(255, 255, 255, 0.679);
 }
 
 #empresa-cards .container-box p {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) 22px / var(--unnamed-line-spacing-32)
+        var(--unnamed-font-family-roboto);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-176bfc);
 }
@@ -547,6 +658,20 @@ footer img {
     justify-content: center;
     background-color: var(--unnamed-color-176bfc-with-opacity);
 }
+/* --------------------------- FLOTA.HTML -----------------------------------*/
+
+.descarga {
+    background-color: white;
+    border-radius: 0px;
+    border: none;
+    font-size: 28px;
+    color: var(--unnamed-color-176bfc);
+    padding: 8px 12px;
+}
+
+.descarga i {
+    margin: 0px 12px 0px 0px;
+}
 
 /* --------------------------- CONTACTO.HTML -----------------------------------*/
 
@@ -554,7 +679,7 @@ footer img {
     background-image: url('../media/fondo_contacto.png');
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 55vh;
+    min-height: 64vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -594,7 +719,7 @@ footer img {
     }
     /* ---NAVBAR -----*/
     .navbar {
-        background-color: #176bfc;
+        background-color: var(--unnamed-color-ffffff);
     }
 
     .navbar-toggler {
