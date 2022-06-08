@@ -135,6 +135,23 @@
     letter-spacing: var(--unnamed-character-spacing-0-08);
 }
 
+.seccion-regular-mobile {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-31);
+    color: var(--unnamed-color-ffffff);
+    margin-bottom: 0px;
+}
+
+.seccion-bold-mobile {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-31);
+    color: var(--unnamed-color-ffffff);
+}
+
 .seccion-regular {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
@@ -214,6 +231,7 @@
     top: 0px;
     width: 100%;
     z-index: 9000;
+    background-color: #176bfc;
 }
 
 .nav-link {
@@ -651,6 +669,7 @@ footer img {
     padding: 10px 15px;
     width: 24%;
     margin: 0px 4px;
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.679);
 }
 
@@ -736,20 +755,32 @@ footer img {
 }
 
 .article-servicios {
-    min-height: 800px;
+    /* min-height: 800px; */
+    margin: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .article-servicios.medio {
-    min-height: 800px;
+    /* min-height: 800px; */
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--unnamed-color-176bfc-with-opacity);
 }
 /* --------------------------- FLOTA.HTML -----------------------------------*/
+#flota-header {
+    background-image: url('../media/Fondo_Servicios.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
 
 .descarga {
     font: var(--unnamed-font-style-normal) normal
@@ -833,7 +864,12 @@ main .flota-description h3 {
         line-height: 1.2;
     }
     .titular-bold {
-        font-size: 45px;
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
+            var(--unnamed-line-spacing-38)
+            var(--unnamed-font-family-helvetica-neue);
+        letter-spacing: var(--unnamed-character-spacing-0-16);
+        color: var(--unnamed-color-176bfc);
     }
 
     .subtitulo {
@@ -844,10 +880,18 @@ main .flota-description h3 {
         font-size: 16px;
         margin-top: 5px;
     }
+
+    .texto-chico {
+        margin-top: 8px;
+        font-size: 16px;
+        font-family: 'Helvetica neue';
+        color: var(--tipografia);
+        letter-spacing: var(--unnamed-character-spacing-0-08);
+    }
     /* ---NAVBAR -----*/
 
     .navbar {
-        background-color: var(--unnamed-color-ffffff);
+        background-color: #176bfc;
     }
 
     .navbar-toggler {
@@ -915,7 +959,7 @@ main .flota-description h3 {
         margin-bottom: 20px;
     }
 
-    /* ---------- INDEX.HTML ----------*/
+    /* ------------------- INDEX.HTML ---------------------*/
     #home {
         background-image: url('../media/fondo_home.svg');
         background-repeat: no-repeat;
@@ -933,7 +977,217 @@ main .flota-description h3 {
         margin-top: 20px;
     }
 
-    /* ---------- CONTACTO.HTML ----------*/
+    #contenedor-slides {
+        margin: 0px;
+    }
+
+    #home-servicios .accordion-body {
+        font-size: 16px;
+    }
+
+    #home-contacto p {
+        font-size: 16px;
+        margin-top: 20px;
+        font-weight: 300;
+    }
+
+    /* ------------------ EMPRESA.HTML ---------------*/
+    #empresa {
+        background-image: none;
+        min-height: 10vh;
+        background-size: contain;
+    }
+
+    #empresa-mobile {
+        background-image: url('../media/fondo_home.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+        min-height: 25vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #empresa-historia .texto-logos p {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+            var(--unnamed-line-spacing-22)
+            var(--unnamed-font-family-helvetica-neue);
+        letter-spacing: var(--unnamed-character-spacing-0-08);
+        color: var(--tipografia);
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    #empresa-historia .texto-logos img {
+        width: 120px;
+    }
+
+    #empresa-historia .container-img-empresa {
+        display: flex;
+        justify-content: center;
+    }
+
+    #empresa-historia .container-img-empresa .img-fluid {
+        width: 92%;
+        margin: 10px 0px 20px 0px;
+    }
+
+    #empresa-historia .container-reverse {
+        flex-direction: column-reverse;
+    }
+
+    #empresa-politica h4 {
+        font-size: 14px;
+    }
+
+    #empresa-politica p {
+        font-size: 14px;
+    }
+
+    #empresa-cards {
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #empresa-cards .container-box {
+        width: 100%;
+        margin: 12px 0px;
+    }
+
+    #empresa-cards .container-box p {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) 16px /
+            var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-176bfc);
+    }
+
+    /* --------------- SERVICIOS.HTML ---------------*/
+
+    #servicios-header {
+        min-height: 10vh;
+        background-size: contain;
+        background-image: none;
+    }
+
+    #servicios-mobile {
+        background-image: url('../media/fondo_home.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+        min-height: 30vh;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #servicios {
+        z-index: 900;
+        position: relative;
+        /* top: -170px; */
+    }
+
+    #servicios .container-box {
+        margin: 6px 0px;
+        max-width: 100%;
+        padding: 15px 10px;
+    }
+
+    #servicios h2 {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+            var(--unnamed-line-spacing-20) var(--unnamed-font-family-roboto);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-176bfc);
+    }
+
+    #servicios .description {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+            var(--unnamed-line-spacing-22)
+            var(--unnamed-font-family-helvetica-neue);
+        letter-spacing: var(--unnamed-character-spacing-0-08);
+        color: var(--tipografia);
+    }
+
+    #servicios .arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    #servicios i {
+        font-size: 14px;
+    }
+
+    .article-servicios {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px;
+    }
+
+    .article-servicios.medio {
+        min-height: 400px;
+    }
+
+    /* ---------------- FLOTA ---------------- */
+
+    .descarga {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
+            var(--unnamed-line-spacing-36)
+            var(--unnamed-font-family-helvetica-neue);
+        letter-spacing: var(--unnamed-character-spacing-0-14);
+        color: var(--unnamed-color-176bfc);
+        background-color: white;
+        border: none;
+        border-radius: 0px;
+        padding: 8px 12px;
+        font-weight: 400;
+    }
+
+    .descarga-secondary {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
+            var(--unnamed-line-spacing-36)
+            var(--unnamed-font-family-helvetica-neue);
+        letter-spacing: var(--unnamed-character-spacing-0-14);
+        color: var(--unnamed-color-ffffff);
+        background-color: var(--unnamed-color-176bfc);
+        border: none;
+        border-radius: 0px;
+        padding: 8px 12px;
+        font-weight: 400;
+    }
+
+    .descarga i {
+        margin: 0px 12px 0px 0px;
+    }
+
+    .descarga-secondary i {
+        margin: 0px 12px 0px 0px;
+    }
+
+    #flota-cards {
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .flota-description h3 {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
+            var(--unnamed-line-spacing-36)
+            var(--unnamed-font-family-helvetica-neue);
+        letter-spacing: var(--unnamed-character-spacing-0-14);
+        color: var(--negro-artug);
+    }
+
+    /* --------------- CONTACTO.HTML ---------------*/
     #contacto {
         min-height: 10vh;
         background-size: contain;

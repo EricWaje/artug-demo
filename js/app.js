@@ -1,4 +1,4 @@
-const menu = document.getElementById('menu');
+/* const menu = document.getElementById('menu');
 
 window.onscroll = function () {
     const y = window.scrollY;
@@ -12,7 +12,7 @@ window.onscroll = function () {
         menu.style.marginTop = '0px';
         menu.style.transition = 'all 0.5s ease-in-out';
     }
-};
+}; */
 
 /* const ancho = () => {
     const ancho = window.screen.width;
