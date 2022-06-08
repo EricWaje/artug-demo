@@ -421,10 +421,6 @@ footer img {
     z-index: -1;
 }
 
-.accordion-button:hover {
-    /* display: none; */
-}
-
 .accordion-header {
     border: none;
     outline: none;
@@ -1016,7 +1012,7 @@ main .flota-description h3 {
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        z-index: 1;
+        z-index: 8000;
     }
 
     .accordion {
@@ -1239,5 +1235,80 @@ main .flota-description h3 {
         min-height: 20vh;
         display: flex;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #empresa-mobile {
+        min-height: 65vh;
+    }
+    #servicios-mobile {
+        min-height: 65vh;
+    }
+    #flota-mobile {
+        min-height: 65vh;
+    }
+    #contacto-mobile {
+        min-height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #empresa-mobile {
+        min-height: 38vh;
+    }
+    #servicios-mobile {
+        min-height: 38vh;
+    }
+    #flota-mobile {
+        min-height: 38vh;
+    }
+    #contacto-mobile {
+        min-height: 38vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #empresa-mobile {
+        min-height: 32vh;
+    }
+    #servicios-mobile {
+        min-height: 32vh;
+    }
+    #flota-mobile {
+        min-height: 32vh;
+    }
+    #contacto-mobile {
+        min-height: 32vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #empresa-mobile {
+        min-height: 32vh;
+    }
+    #servicios-mobile {
+        min-height: 32vh;
+    }
+    #flota-mobile {
+        min-height: 32vh;
+    }
+    #contacto-mobile {
+        min-height: 32vh;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #empresa-mobile {
+        min-height: 25vh;
+    }
+    #servicios-mobile {
+        min-height: 25vh;
+    }
+    #flota-mobile {
+        min-height: 25vh;
+    }
+    #contacto-mobile {
+        min-height: 25vh;
     }
 }
