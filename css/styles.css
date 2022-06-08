@@ -1,44 +1,8 @@
 /* ROBOTO */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 /* OPEN SANS */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
-/* HELVETICA */
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url(../fonts/helvetica-black.ttf);
-    font-style: normal;
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url(../fonts/helvetica-bold.ttf);
-    font-style: normal;
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url(../fonts/helvetica-medium.ttf);
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url(../fonts/helvetica-light.ttf);
-    font-style: normal;
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url(../fonts/helvetica-thin.ttf);
-    font-style: normal;
-    font-weight: 100;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -56,7 +20,7 @@
     --negro-artug: #1a171b;
 
     /* Font/text values */
-    --unnamed-font-family-helvetica-neue: 'Helvetica Neue';
+    --unnamed-font-family-open-sans: 'Open sans', sans-serif;
     --unnamed-font-family-roboto: 'Roboto', sans-serif;
     --unnamed-font-style-normal: normal;
     --unnamed-font-weight-bold: bold;
@@ -83,7 +47,7 @@
 
 /* Character Styles */
 .unnamed-character-style-1 {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: var(--unnamed-font-size-32);
@@ -92,7 +56,7 @@
     color: var(--unnamed-color-176bfc);
 }
 .unnamed-character-style-2 {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
     font-size: var(--unnamed-font-size-32);
@@ -101,7 +65,7 @@
     color: var(--unnamed-color-176bfc);
 }
 .unnamed-character-style-3 {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
     font-size: var(--unnamed-font-size-24);
@@ -110,7 +74,7 @@
     color: var(--tipografia);
 }
 .unnamed-character-style-4 {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
     font-size: var(--unnamed-font-size-32);
@@ -123,7 +87,7 @@
 .titulo-seccion-mobile {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-16);
     color: var(--unnamed-color-ffffff);
     font-weight: 400;
@@ -138,7 +102,7 @@
 .seccion-regular-mobile {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
@@ -147,7 +111,7 @@
 .seccion-bold-mobile {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
 }
@@ -155,7 +119,7 @@
 .seccion-regular {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
-        var(--unnamed-line-spacing-72) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
@@ -164,7 +128,7 @@
 .seccion-bold {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) var(--unnamed-font-size-62) /
-        var(--unnamed-line-spacing-72) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
 }
@@ -191,7 +155,7 @@
     margin-bottom: 0px;
 }
 .subtitulo {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: var(--unnamed-font-size-28);
@@ -201,7 +165,7 @@
     margin-bottom: 0px;
 }
 .titular-bold {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: var(--unnamed-font-size-62);
@@ -211,7 +175,7 @@
     margin-bottom: 0px;
 }
 .titular-regular {
-    font-family: var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
     font-size: var(--unnamed-font-size-62);
@@ -237,7 +201,7 @@
 .nav-link {
     font: var(--unnamed-font-style-normal) 400 var(--unnamed-font-weight-normal)
         26px / var(--unnamed-line-spacing-52)
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     color: var(--unnamed-color-ffffff);
     margin: 0px 16px;
     padding: 0px !important;
@@ -247,14 +211,14 @@
 .nav-link:hover {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) 26px / var(--unnamed-line-spacing-52)
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     color: var(--unnamed-color-ffffff);
 }
 
 .navbar-nav .nav-link.active {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) 26px / var(--unnamed-line-spacing-52)
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     color: white;
 }
 
@@ -317,7 +281,7 @@ footer h3 {
     color: var(--unnamed-color-ffffff);
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) 20px / var(--unnamed-line-spacing-36)
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     /* font-size: 20px; */
     margin-bottom: 10px;
 }
@@ -325,7 +289,7 @@ footer h3 {
 footer p {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) 18px/28px
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     color: var(--unnamed-color-ffffff);
     color: white;
     font-size: 18px;
@@ -342,7 +306,7 @@ footer ul {
 footer a {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) 18px / var(--unnamed-line-spacing-32)
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     color: var(--unnamed-color-ffffff);
     color: white;
     text-decoration: none;
@@ -370,7 +334,7 @@ footer img {
     width: 150px;
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) var(--unnamed-font-size-24) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--unnamed-color-ffffff);
     text-align: center;
@@ -392,7 +356,7 @@ footer img {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
+    z-index: 8000;
 }
 
 #home .scroll {
@@ -430,6 +394,10 @@ footer img {
 
 .accordion {
     z-index: -1;
+}
+
+.accordion-button:hover {
+    /* display: none; */
 }
 
 .accordion-header {
@@ -500,7 +468,7 @@ footer img {
 #contenedor-slides .box-datos h2 {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-52) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-52) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-16);
     color: var(--unnamed-color-ffffff);
     font-weight: 200;
@@ -545,7 +513,7 @@ footer img {
 #contenedor-slides .box-datos p {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-52) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-52) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-16);
     color: white;
     font-size: 18px;
@@ -571,7 +539,7 @@ footer img {
 #home-contacto p {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
-        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-12);
     color: var(--tipografia);
 }
@@ -587,7 +555,7 @@ footer img {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
+    z-index: 8000;
 }
 
 #empresa-historia {
@@ -688,6 +656,7 @@ footer img {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    z-index: 8000;
 }
 
 #servicios {
@@ -700,7 +669,7 @@ footer img {
 #servicios h2 {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) 42px / var(--unnamed-line-spacing-52)
-        var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-176bfc);
 }
@@ -708,7 +677,7 @@ footer img {
 #servicios .description {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
 }
 
@@ -776,12 +745,13 @@ footer img {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    z-index: 8000;
 }
 
 .descarga {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--unnamed-color-176bfc);
     background-color: white;
@@ -794,7 +764,7 @@ footer img {
 .descarga-secondary {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--unnamed-color-ffffff);
     background-color: var(--unnamed-color-176bfc);
@@ -822,7 +792,7 @@ footer img {
 main .flota-description h3 {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--negro-artug);
 }
@@ -838,13 +808,13 @@ main .flota-description h3 {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
+    z-index: 8000;
 }
 
 #contacto .hero-contacto {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
-        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-12);
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
@@ -862,8 +832,7 @@ main .flota-description h3 {
     .titular-bold {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
-            var(--unnamed-line-spacing-38)
-            var(--unnamed-font-family-helvetica-neue);
+            var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-16);
         color: var(--unnamed-color-176bfc);
     }
@@ -999,7 +968,7 @@ main .flota-description h3 {
         background-repeat: no-repeat;
         width: 100%;
         background-size: contain;
-        min-height: 25vh;
+        min-height: 30vh;
         display: flex;
         align-items: center;
     }
@@ -1007,8 +976,7 @@ main .flota-description h3 {
     #empresa-historia .texto-logos p {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
-            var(--unnamed-line-spacing-22)
-            var(--unnamed-font-family-helvetica-neue);
+            var(--unnamed-line-spacing-22) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-08);
         color: var(--tipografia);
         font-weight: 300;
@@ -1102,8 +1070,7 @@ main .flota-description h3 {
     #servicios .description {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
-            var(--unnamed-line-spacing-22)
-            var(--unnamed-font-family-helvetica-neue);
+            var(--unnamed-line-spacing-22) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-08);
         color: var(--tipografia);
     }
@@ -1134,8 +1101,7 @@ main .flota-description h3 {
     .descarga {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-            var(--unnamed-line-spacing-36)
-            var(--unnamed-font-family-helvetica-neue);
+            var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-14);
         color: var(--unnamed-color-176bfc);
         background-color: white;
@@ -1148,8 +1114,7 @@ main .flota-description h3 {
     .descarga-secondary {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-            var(--unnamed-line-spacing-36)
-            var(--unnamed-font-family-helvetica-neue);
+            var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-14);
         color: var(--unnamed-color-ffffff);
         background-color: var(--unnamed-color-176bfc);
@@ -1177,8 +1142,7 @@ main .flota-description h3 {
     main .flota-description h3 {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
-            var(--unnamed-line-spacing-36)
-            var(--unnamed-font-family-helvetica-neue);
+            var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-14);
         color: var(--negro-artug);
     }
