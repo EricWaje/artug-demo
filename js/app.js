@@ -14,7 +14,7 @@ window.onscroll = function () {
     }
 };
 
-const ancho = () => {
+/* const ancho = () => {
     const ancho = window.screen.width;
 
     if (ancho < 600) {
@@ -28,4 +28,4 @@ const start = () => {
     ancho();
 };
 
-window.onload = start;
+window.onload = start; */

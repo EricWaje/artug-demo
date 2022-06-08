@@ -120,6 +120,21 @@
     text-transform: var(--unnamed-text-transform-titlecase);
 }
 
+.titulo-seccion-mobile {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-16);
+    color: var(--unnamed-color-ffffff);
+    font-weight: 400;
+}
+
+.text-mobile {
+    font-family: 'Helvetica neue';
+    color: var(--tipografia);
+    letter-spacing: var(--unnamed-character-spacing-0-08);
+}
+
 .seccion-regular {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
@@ -790,7 +805,7 @@ main .flota-description h3 {
 #contacto {
     background-image: url('../media/fondo_contacto.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     min-height: 64vh;
     display: flex;
     flex-direction: column;
@@ -830,6 +845,7 @@ main .flota-description h3 {
         margin-top: 5px;
     }
     /* ---NAVBAR -----*/
+
     .navbar {
         background-color: var(--unnamed-color-ffffff);
     }
@@ -915,5 +931,20 @@ main .flota-description h3 {
 
     .accordion {
         margin-top: 20px;
+    }
+
+    /* ---------- CONTACTO.HTML ----------*/
+    #contacto {
+        min-height: 10vh;
+        background-size: contain;
+        background-image: none;
+        background-color: white;
+    }
+
+    #contacto-mobile {
+        background-color: #176bfc;
+        min-height: 20vh;
+        display: flex;
+        align-items: center;
     }
 }
