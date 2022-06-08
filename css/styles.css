@@ -213,7 +213,7 @@
 
 .nav-link:hover {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 22px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-weight-normal) 26px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-helvetica-neue);
     color: var(--unnamed-color-ffffff);
 }
@@ -344,6 +344,10 @@ footer img {
     font-weight: 400;
     opacity: 1;
 }
+.boton-primario a {
+    color: white;
+    text-decoration: none;
+}
 
 /* --------------------------- INDEX.HTML -----------------------------------*/
 #home {
@@ -432,30 +436,102 @@ footer img {
     background-color: var(--unnamed-color-176bfc-with-opacity);
 }
 
-#home-flota .img-with-text {
-    position: relative;
-    transition: all 0.3s ease-in-out;
-}
+/* -------- SLIDE --------- */
 
-#home-flota .img-with-text h4 {
-    position: absolute;
-    bottom: -8px;
-    left: 0px;
-    padding: 3px 8px;
-    color: white;
-    background-color: var(--unnamed-color-176bfc);
-    font-weight: 400;
-    width: 80%;
-    transition: all 0.3s ease-in-out;
-    height: 12%;
-}
-
-#home-flota .img-with-text h4:hover {
+#contenedor-slides {
+    height: 420px;
     width: 100%;
-    height: 100%;
-    background-color: #176bfca8;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+#contenedor-slides img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+#contenedor-slides .box-datos {
+    position: absolute;
+    top: 343px;
+    height: 450px;
+    width: 80%;
+    background-color: #176bfc;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    transition: 0.4s;
+    padding: 10px;
+}
+#contenedor-slides .box-datos h2 {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
+        var(--unnamed-line-spacing-52) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-16);
+    color: var(--unnamed-color-ffffff);
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
+#contenedor-slides .box-datos .divider {
+    margin-right: 10px;
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#contenedor-slides .box-datos .info {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    z-index: 200;
+    margin: 0px 0px 15px 0px;
+}
+
+#contenedor-slides .box-datos .divider-info {
+    width: 3px;
+    height: 18px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    margin: 0px 0px 0px 10px;
+}
+
+#contenedor-slides .box-datos h3 {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
+        var(--unnamed-line-spacing-52) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-16);
+    color: var(--unnamed-color-ffffff);
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+
+    margin: 0px;
+}
+
+#contenedor-slides .box-datos p {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
+        var(--unnamed-line-spacing-52) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-16);
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+#contenedor-slides:hover .box-datos {
+    transform: translateY(-343px);
+    width: 100%;
+    background-color: #176bfc7e;
+}
+
+/* -------- FIN SLIDE --------- */
 #home-clientes {
     background-image: url('../media/clientes.svg');
     background-repeat: no-repeat;
@@ -661,16 +737,52 @@ footer img {
 /* --------------------------- FLOTA.HTML -----------------------------------*/
 
 .descarga {
-    background-color: white;
-    border-radius: 0px;
-    border: none;
-    font-size: 28px;
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--unnamed-color-176bfc);
+    background-color: white;
+    border: none;
+    border-radius: 0px;
     padding: 8px 12px;
+    font-weight: 400;
+}
+
+.descarga-secondary {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-14);
+    color: var(--unnamed-color-ffffff);
+    background-color: var(--unnamed-color-176bfc);
+    border: none;
+    border-radius: 0px;
+    padding: 8px 12px;
+    font-weight: 400;
 }
 
 .descarga i {
     margin: 0px 12px 0px 0px;
+}
+
+.descarga-secondary i {
+    margin: 0px 12px 0px 0px;
+}
+
+#flota-cards {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .flota-description h3 {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0-14);
+    color: var(--negro-artug);
 }
 
 /* --------------------------- CONTACTO.HTML -----------------------------------*/
