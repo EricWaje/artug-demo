@@ -10,6 +10,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* Colors: */
     --unnamed-color-ffffff: #ffffff;
@@ -28,6 +32,7 @@
     --unnamed-font-size-20: 20px;
     --unnamed-font-size-22: 22px;
     --unnamed-font-size-24: 24px;
+    --unnamed-font-size-26: 26px;
     --unnamed-font-size-28: 28px;
     --unnamed-font-size-32: 32px;
     --unnamed-font-size-42: 42px;
@@ -101,7 +106,7 @@
 
 .seccion-regular-mobile {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-26) /
         var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
@@ -110,7 +115,7 @@
 
 .seccion-bold-mobile {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-26) /
         var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
@@ -119,6 +124,15 @@
 .seccion-regular {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
+        var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
+    letter-spacing: var(--unnamed-character-spacing-0-31);
+    color: var(--unnamed-color-ffffff);
+    margin-bottom: 0px;
+}
+
+.seccion-regular-contacto {
+    font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-42) /
         var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
@@ -239,11 +253,22 @@ form .form-control {
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
         var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
     letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--tipografia);
+    color: #176bfc;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 0px;
     padding: 0px 0px 3px 2px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 300;
+}
+form .form-control::placeholder {
+    color: #176bfc;
+}
+
+form .form-control:focus {
+    color: #176bfc;
+    border-bottom: 1px solid #176bfc;
+    box-shadow: none;
 }
 
 form .form-mensaje {
@@ -492,14 +517,6 @@ footer img {
     margin: 0px 0px 15px 0px;
 }
 
-#contenedor-slides .box-datos .divider-info {
-    /*     width: 2px;
-    height: 18px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    margin: 0px 0px 0px 10px; */
-}
-
 #contenedor-slides .box-datos h3 {
     color: var(--unnamed-color-ffffff);
     font-weight: 400;
@@ -530,10 +547,21 @@ footer img {
 
 /* -------- FIN SLIDE --------- */
 #home-clientes {
-    background-image: url('../media/clientes.svg');
+    background-image: url('../media/fondo_clientes_home.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 64vh;
+    min-height: 50vh;
+    display: flex;
+
+    align-items: center;
+}
+
+#home-clientes p {
+    color: white;
+    font-family: var(--unnamed-font-family-open-sans);
+    font-size: 26px;
+    font-weight: 200;
+    margin: 10px 0px;
 }
 
 #home-contacto p {
@@ -586,11 +614,8 @@ footer img {
     margin: 10px 10px;
 }
 
-#empresa-clientes {
-    background-image: url('../media/clientes.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 64vh;
+#empresa-politica {
+    padding: 50px 0px;
 }
 
 #empresa-politica h2 {
@@ -749,37 +774,74 @@ footer img {
 }
 
 .descarga {
-    font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
-    letter-spacing: var(--unnamed-character-spacing-0-14);
-    color: var(--unnamed-color-176bfc);
     background-color: white;
+    max-width: 100%;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0px;
-    padding: 8px 12px;
-    font-weight: 400;
+    font-size: 26px;
+}
+
+.descarga:focus {
+    border: none;
+    box-shadow: none;
+    background-color: rgb(228, 228, 228);
+}
+
+.descarga:hover {
+    border: none;
+    box-shadow: none;
+    background-color: rgb(228, 228, 228);
+}
+
+.descarga img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.descarga p {
+    color: #176bfc;
+    margin: 0px;
+    text-align: left;
+    line-height: 20px;
 }
 
 .descarga-secondary {
-    font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
-    letter-spacing: var(--unnamed-character-spacing-0-14);
-    color: var(--unnamed-color-ffffff);
-    background-color: var(--unnamed-color-176bfc);
+    background-color: #176bfc;
+    max-width: 100%;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0px;
-    padding: 8px 12px;
-    font-weight: 400;
+    font-size: 26px;
+    margin-top: 20px;
 }
 
-.descarga i {
-    margin: 0px 12px 0px 0px;
+.descarga-secondary:focus {
+    border: none;
+    box-shadow: none;
+    background-color: #0c5ce8;
 }
 
-.descarga-secondary i {
-    margin: 0px 12px 0px 0px;
+.descarga-secondary:hover {
+    border: none;
+    box-shadow: none;
+    background-color: #0c5ce8;
+}
+
+.descarga-secondary img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.descarga-secondary p {
+    color: #ffffff;
+    margin: 0px;
+    text-align: left;
+    line-height: 20px;
 }
 
 #flota-cards {
@@ -819,6 +881,7 @@ main .flota-description h3 {
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
     margin-top: 10px;
+    font-weight: 200;
 }
 
 /* ---------- MEDIA QUERIES --------- */
@@ -852,6 +915,24 @@ main .flota-description h3 {
         font-family: 'Helvetica neue';
         color: var(--tipografia);
         letter-spacing: var(--unnamed-character-spacing-0-08);
+        text-align: center;
+    }
+
+    .seccion-regular {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
+            var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
+        letter-spacing: var(--unnamed-character-spacing-0-31);
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .seccion-bold {
+        font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-62) /
+            var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
+        letter-spacing: var(--unnamed-character-spacing-0-31);
+        font-size: 26px;
     }
     /* ---NAVBAR -----*/
 
@@ -948,6 +1029,14 @@ main .flota-description h3 {
 
     #home-servicios .accordion-body {
         font-size: 16px;
+    }
+
+    #home-clientes {
+        padding: 15px 0px;
+    }
+
+    #home-clientes p {
+        font-size: 18px;
     }
 
     #home-contacto p {
@@ -1097,39 +1186,33 @@ main .flota-description h3 {
     }
 
     /* ---------------- FLOTA ---------------- */
+    #flota-header {
+        min-height: 10vh;
+        background-size: contain;
+        background-image: none;
+    }
+
+    #flota-mobile {
+        background-image: url('../media/fondo_home.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+    }
 
     .descarga {
-        font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-            var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
-        letter-spacing: var(--unnamed-character-spacing-0-14);
-        color: var(--unnamed-color-176bfc);
-        background-color: white;
-        border: none;
-        border-radius: 0px;
-        padding: 8px 12px;
-        font-weight: 400;
+        font-size: 14px;
     }
 
-    .descarga-secondary {
-        font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
-            var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
-        letter-spacing: var(--unnamed-character-spacing-0-14);
-        color: var(--unnamed-color-ffffff);
-        background-color: var(--unnamed-color-176bfc);
-        border: none;
-        border-radius: 0px;
-        padding: 8px 12px;
-        font-weight: 400;
+    .descarga img {
+        width: 20px;
+        margin-right: 8px;
     }
 
-    .descarga i {
-        margin: 0px 12px 0px 0px;
-    }
-
-    .descarga-secondary i {
-        margin: 0px 12px 0px 0px;
+    .texto-flota {
+        font-size: 16px;
     }
 
     #flota-cards {
@@ -1140,11 +1223,7 @@ main .flota-description h3 {
     }
 
     main .flota-description h3 {
-        font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
-            var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
-        letter-spacing: var(--unnamed-character-spacing-0-14);
-        color: var(--negro-artug);
+        font-size: 16px;
     }
 
     /* --------------- CONTACTO.HTML ---------------*/
