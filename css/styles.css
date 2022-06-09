@@ -223,7 +223,7 @@ html {
     top: 0px;
     width: 100%;
     z-index: 9000;
-    background-color: #176bfc;
+    /* background-color: #176bfc; */
 }
 
 .nav-link {
@@ -953,9 +953,39 @@ main .flota-description h3 {
         font-size: 26px;
     }
     /* ---NAVBAR -----*/
+    #barraUno {
+        width: 25px;
+        height: 2px;
+        background-color: #176bfc;
+        margin: 6px 0px 4px 0px;
+        border: none;
+        opacity: 1;
+    }
+
+    #barraDos {
+        width: 25px;
+        height: 2px;
+        background-color: #176bfc;
+        margin: 6px 0px 4px 0px;
+        border: none;
+        opacity: 1;
+    }
+
+    #barraTres {
+        width: 25px;
+        height: 2px;
+        background-color: #176bfc;
+        margin: 6px 0px 6px 0px;
+        border: none;
+        opacity: 1;
+    }
 
     .navbar {
-        background-color: #176bfc;
+        background-color: white;
+    }
+
+    .nav-link {
+        color: var(--unnamed-color-176bfc);
     }
 
     .navbar-toggler {
@@ -970,7 +1000,19 @@ main .flota-description h3 {
 
     .navbar-toggler i {
         font-size: 30px;
-        color: white;
+        color: #176bfc;
+    }
+
+    .listado-links {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .listado-links-mobile {
+        height: 80vh;
+        justify-content: space-evenly;
+        margin-top: 1px;
     }
 
     /* ----- FORM ----- */
@@ -1071,7 +1113,7 @@ main .flota-description h3 {
     }
 
     #empresa-mobile {
-        background-image: url('../media/fondo_home.svg');
+        background-image: url('../media/Fondo_Servicios.png');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
@@ -1145,7 +1187,7 @@ main .flota-description h3 {
     }
 
     #servicios-mobile {
-        background-image: url('../media/fondo_home.svg');
+        background-image: url('../media/Fondo_Servicios.png');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
@@ -1211,7 +1253,7 @@ main .flota-description h3 {
     }
 
     #flota-mobile {
-        background-image: url('../media/fondo_home.svg');
+        background-image: url('../media/Fondo_Servicios.png');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
@@ -1253,7 +1295,7 @@ main .flota-description h3 {
     }
 
     #contacto-mobile {
-        background-image: url('../media/fondo_home.svg');
+        background-image: url('../media/fondo_contacto.png');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
