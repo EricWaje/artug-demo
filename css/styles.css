@@ -912,6 +912,12 @@ main .flota-description h3 {
         color: var(--unnamed-color-176bfc);
     }
 
+    .titular {
+        font-size: 26px;
+        line-height: var(--unnamed-line-spacing-36);
+        letter-spacing: var(--unnamed-character-spacing-0-31);
+    }
+
     .subtitulo {
         font-size: 18px;
     }
