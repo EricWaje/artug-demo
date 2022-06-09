@@ -38,10 +38,10 @@ html {
     --unnamed-font-size-42: 42px;
     --unnamed-font-size-62: 62px;
     --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-0-12: 0.12px;
     --unnamed-character-spacing-0-14: 0.14px;
     --unnamed-character-spacing-0-16: 0.16px;
     --unnamed-character-spacing-0-31: 0.31px;
-    --unnamed-character-spacing-0-12: 0.12px;
     --unnamed-line-spacing-32: 32px;
     --unnamed-line-spacing-36: 36px;
     --unnamed-line-spacing-38: 38px;
@@ -178,6 +178,18 @@ html {
     color: var(--negro-artug);
     margin-bottom: 0px;
 }
+
+.titular {
+    font-family: var(--unnamed-font-family-open-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-42);
+    line-height: var(--unnamed-line-spacing-72);
+    letter-spacing: var(--unnamed-character-spacing-0-31);
+    color: var(--unnamed-color-176bfc);
+    margin-bottom: 0px;
+}
+
 .titular-bold {
     font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
@@ -188,6 +200,7 @@ html {
     color: var(--unnamed-color-176bfc);
     margin-bottom: 0px;
 }
+
 .titular-regular {
     font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
@@ -493,7 +506,6 @@ footer img {
     letter-spacing: var(--unnamed-character-spacing-0-16);
     color: var(--unnamed-color-ffffff);
     font-weight: 200;
-    margin-top: 10px;
     margin-bottom: 0px;
 }
 
@@ -526,8 +538,8 @@ footer img {
 #contenedor-slides .box-datos p {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-52) var(--unnamed-font-family-open-sans);
-    letter-spacing: var(--unnamed-character-spacing-0-16);
+        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
+    letter-spacing: var(--unnamed-character-spacing-0);
     color: white;
     font-size: 18px;
     font-weight: 200;
@@ -623,7 +635,7 @@ footer img {
 
 #empresa-politica h4 {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) var(--unnamed-font-size-24) /
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-20) /
         var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -632,7 +644,7 @@ footer img {
 
 #empresa-politica p {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-20) /
         var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -660,8 +672,8 @@ footer img {
 
 #empresa-cards .container-box p {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 22px / var(--unnamed-line-spacing-32)
-        var(--unnamed-font-family-roboto);
+        var(--unnamed-font-weight-normal) 20px / var(--unnamed-line-spacing-32)
+        var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-176bfc);
 }
@@ -689,7 +701,7 @@ footer img {
 
 #servicios h2 {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) 42px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-weight-bold) 32px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-176bfc);
@@ -697,7 +709,7 @@ footer img {
 
 #servicios .description {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-26) /
         var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
 }
