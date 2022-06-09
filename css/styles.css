@@ -159,10 +159,11 @@ html {
 }
 
 .texto {
-    font-family: var(--unnamed-font-family-roboto);
+    font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-24);
+    font-weight: 400;
+    font-size: var(--unnamed-font-size-20);
     line-height: var(--unnamed-line-spacing-32);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -172,7 +173,7 @@ html {
     font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-28);
+    font-size: var(--unnamed-font-size-26);
     line-height: var(--unnamed-line-spacing-36);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--negro-artug);
@@ -409,7 +410,7 @@ footer img {
 }
 
 #home-servicios {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,7 +425,7 @@ footer img {
     border: none;
     outline: none;
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-20) /
         var(--unnamed-line-spacing-32) 'Open Sans';
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -756,6 +757,7 @@ footer img {
 
 .article-servicios {
     /* min-height: 800px; */
+
     margin: 50px 0px;
     display: flex;
     flex-direction: column;
