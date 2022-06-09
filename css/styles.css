@@ -593,7 +593,7 @@ footer img {
 #empresa-historia .texto-logos p {
     /* width: 80%; */
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) / 34px
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-20) / 34px
         Open Sans;
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--tipografia);
@@ -1052,7 +1052,7 @@ main .flota-description h3 {
         background-image: url('../media/fondo_home.svg');
         background-repeat: no-repeat;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         min-height: 30vh;
         display: flex;
         align-items: center;
@@ -1126,7 +1126,7 @@ main .flota-description h3 {
         background-image: url('../media/fondo_home.svg');
         background-repeat: no-repeat;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         min-height: 30vh;
         display: flex;
         align-items: flex-start;
@@ -1192,7 +1192,7 @@ main .flota-description h3 {
         background-image: url('../media/fondo_home.svg');
         background-repeat: no-repeat;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         min-height: 30vh;
         display: flex;
         align-items: center;
@@ -1231,14 +1231,17 @@ main .flota-description h3 {
     }
 
     #contacto-mobile {
-        background-color: #176bfc;
-        min-height: 20vh;
+        background-image: url('../media/fondo_home.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        min-height: 30vh;
         display: flex;
         align-items: center;
     }
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     #empresa-mobile {
         min-height: 65vh;
     }
@@ -1311,4 +1314,4 @@ main .flota-description h3 {
     #contacto-mobile {
         min-height: 25vh;
     }
-}
+} */
