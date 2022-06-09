@@ -911,7 +911,7 @@ main .flota-description h3 {
         font-family: 'Helvetica neue';
         color: var(--tipografia);
         letter-spacing: var(--unnamed-character-spacing-0-08);
-        text-align: center;
+        text-align: left;
     }
 
     .seccion-regular {
@@ -1006,7 +1006,7 @@ main .flota-description h3 {
         background-image: url('../media/fondo_home.svg');
         background-repeat: no-repeat;
         background-size: cover;
-        /* min-height: 100vh; */
+        min-height: 60vh;
         background-position: 40% 100%;
         display: flex;
         flex-direction: column;
