@@ -857,7 +857,7 @@ footer img {
 }
 
 #flota-cards {
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -865,7 +865,7 @@ footer img {
 
 main .flota-description h3 {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-26) /
         var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-14);
     color: var(--negro-artug);
