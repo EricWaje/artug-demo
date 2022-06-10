@@ -702,7 +702,7 @@ footer img {
 #servicios {
     padding: 30px 0px;
     position: relative;
-    top: -91px;
+    /* top: -91px; */
     z-index: 8100;
 }
 
@@ -922,6 +922,8 @@ main .flota-description h3 {
         font-size: 26px;
         line-height: var(--unnamed-line-spacing-36);
         letter-spacing: var(--unnamed-character-spacing-0-31);
+        /* padding-top: 50px; */
+        /* padding-bottom: 15px; */
     }
 
     .subtitulo {
@@ -994,6 +996,17 @@ main .flota-description h3 {
         color: var(--unnamed-color-176bfc);
     }
 
+    .nav-link:hover {
+        color: var(--unnamed-color-176bfc);
+    }
+    .nav-link:focus {
+        color: var(--unnamed-color-176bfc);
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #176bfc;
+    }
+
     .navbar-toggler {
         border: none;
     }
@@ -1010,7 +1023,7 @@ main .flota-description h3 {
     }
 
     .listado-links {
-        height: 80vh;
+        height: 82.5vh;
         justify-content: space-evenly;
         margin-top: 1px;
     }
@@ -1108,7 +1121,7 @@ main .flota-description h3 {
     /* ------------------ EMPRESA.HTML ---------------*/
     #empresa {
         background-image: none;
-        min-height: 10vh;
+        min-height: 6vh;
         background-size: contain;
     }
 
@@ -1181,7 +1194,7 @@ main .flota-description h3 {
     /* --------------- SERVICIOS.HTML ---------------*/
 
     #servicios-header {
-        min-height: 10vh;
+        min-height: 6vh;
         background-size: contain;
         background-image: none;
     }
@@ -1193,7 +1206,7 @@ main .flota-description h3 {
         background-size: cover;
         min-height: 30vh;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
 
     #servicios {
@@ -1214,6 +1227,7 @@ main .flota-description h3 {
             var(--unnamed-line-spacing-20) var(--unnamed-font-family-roboto);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--unnamed-color-176bfc);
+        margin-bottom: 0px;
     }
 
     #servicios .description {
@@ -1225,12 +1239,13 @@ main .flota-description h3 {
     }
 
     #servicios .arrow {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     #servicios i {
         font-size: 14px;
+        margin-bottom: 2px;
     }
 
     .article-servicios {
@@ -1239,15 +1254,17 @@ main .flota-description h3 {
         flex-direction: column;
         justify-content: center;
         margin: 10px 0px;
+        padding: 65px 0px;
     }
 
     .article-servicios.medio {
         min-height: 400px;
+        padding: 65px 0px;
     }
 
     /* ---------------- FLOTA ---------------- */
     #flota-header {
-        min-height: 10vh;
+        min-height: 6vh;
         background-size: contain;
         background-image: none;
     }
@@ -1288,7 +1305,7 @@ main .flota-description h3 {
 
     /* --------------- CONTACTO.HTML ---------------*/
     #contacto {
-        min-height: 10vh;
+        min-height: 6vh;
         background-size: contain;
         background-image: none;
         background-color: white;

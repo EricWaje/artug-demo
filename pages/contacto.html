@@ -20,8 +20,15 @@
         <header id="contacto">
             <nav class="navbar navbar-expand-lg" id="menu">
                 <div class="container">
-                    <a href="../index.html"
-                        ><img src="../media/logo.svg" alt="logo" class="w-75"
+                    <a href="./index.html"
+                        ><img
+                            src="../media/logo.svg"
+                            alt="logo"
+                            class="w-75 d-none d-sm-block" />
+                        <img
+                            src="../media/logo-mobile.svg"
+                            alt="logo"
+                            class="w-75 d-sm-none"
                     /></a>
                     <button
                         class="navbar-toggler"
@@ -32,14 +39,20 @@
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <i class="fa-solid fa-bars"></i>
+                        <div id="hamb">
+                            <hr id="barraUno" />
+                            <hr id="barraDos" />
+                            <hr id="barraTres" />
+                        </div>
+                        <!-- <i class="fa-solid fa-bars"></i> -->
                     </button>
                     <div
                         class="collapse navbar-collapse justify-content-center align-items-center"
                         id="navbarSupportedContent"
                     >
                         <ul
-                            class="navbar-nav mb-2 mb-lg-0 flex-grow-1 d-flex justify-content-center"
+                            class="navbar-nav mb-2 mb-lg-0 listado-links"
+                            id="menu-ul"
                         >
                             <li class="nav-item">
                                 <a
@@ -54,6 +67,7 @@
                                     class="nav-link"
                                     aria-current="page"
                                     href="./empresa.html#empresa-politica"
+                                    id="em-po"
                                     >Políticas</a
                                 >
                             </li>
@@ -83,9 +97,15 @@
                             </li>
                         </ul>
                         <div>
-                            <a class="nav-link" aria-current="page" href="#"
+                            <a
+                                class="nav-link d-none d-sm-block"
+                                aria-current="page"
+                                href="#"
                                 ><img src="../media/linkedin.svg" alt=""
                             /></a>
+                            <a class="nav-link" aria-current="page" href="#"
+                                ><i class="fa-brands fa-linkedin d-sm-none"></i
+                            ></a>
                         </div>
                     </div>
                 </div>

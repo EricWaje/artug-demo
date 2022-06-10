@@ -1,34 +1,26 @@
-const menu = document.getElementById('menu');
+const navbar = document.getElementById('menu');
 const hamb = document.getElementById('hamb');
 const ul = document.getElementById('menu-ul');
+const menu = document.getElementById('navbarSupportedContent');
+const politicas = document.getElementById('em-po');
 
 window.onscroll = function () {
     const y = window.scrollY;
     const ancho = window.screen.width;
     if (y > 20 && ancho > 600) {
-        menu.style.marginTop = '0px';
-        menu.style.backgroundColor = '#176bfc';
-        menu.style.transition = 'all 0.5s ease-in-out';
-    } else if (y > 30 && ancho < 600) {
-        menu.style.marginTop = '0px';
-        menu.style.backgroundColor = '#ffffff';
-        menu.style.transition = 'all 0.5s ease-in-out';
-        menu.style.borderBottom = '4px solid #176bfc';
+        navbar.style.marginTop = '0px';
+        navbar.style.backgroundColor = '#176bfc';
+        navbar.style.transition = 'all 0.5s ease-in-out';
+    } else if (y >= 0 && ancho < 600) {
+        navbar.style.marginTop = '0px';
+        navbar.style.backgroundColor = '#ffffff';
+        navbar.style.transition = 'all 0.5s ease-in-out';
+        navbar.style.borderBottom = '4px solid #176bfc';
     } else {
-        menu.style.backgroundColor = 'transparent';
-        menu.style.marginTop = '0px';
-        menu.style.transition = 'all 0.5s ease-in-out';
-    }
-};
-
-const desplegar = () => {
-    const pantalla = window.screen.width;
-    if (pantalla < 600) {
-        ul.classList.remove('listado-links');
-        ul.classList.add('listado-links-mobile');
-    } else {
-        ul.classList.remove('listado-links-mobile');
-        ul.classList.add('listado-links');
+        navbar.style.backgroundColor = 'transparent';
+        navbar.style.marginTop = '0px';
+        navbar.style.transition = 'all 0.5s ease-in-out';
+        navbar.style.borderBottom = '0px solid #176bfc';
     }
 };
 
@@ -54,25 +46,17 @@ const modificarMenu = () => {
     }
 };
 
-const start = () => {
-    desplegar();
-    hamb.addEventListener('click', modificarMenu);
-};
-
-window.onload = start;
-
-/* const ancho = () => {
-    const ancho = window.screen.width;
-
-    if (ancho < 600) {
-        menu.style.backgroundColor = '#176bfc';
+const cerrarMenu = () => {
+    if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
     } else {
-        menu.style.backgroundColor = 'transparent';
+        /* menu.classList.remove('show'); */
     }
 };
 
 const start = () => {
-    ancho();
+    hamb.addEventListener('click', modificarMenu);
+    politicas.addEventListener('click', cerrarMenu);
 };
 
-window.onload = start; */
+window.onload = start;
