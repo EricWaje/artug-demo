@@ -3,6 +3,25 @@ const hamb = document.getElementById('hamb');
 const ul = document.getElementById('menu-ul');
 const menu = document.getElementById('navbarSupportedContent');
 const politicas = document.getElementById('em-po');
+const links = document.querySelectorAll('.scroll-to');
+
+links.forEach((item) => {
+    item.addEventListener('click', () => {
+        const el = document.getElementById(item.getAttribute('data-link'));
+        const pantalla = window.screen.width;
+        if (pantalla < 600) {
+            el.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+            });
+        } else {
+            el.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    });
+});
 
 window.onscroll = function () {
     const y = window.scrollY;

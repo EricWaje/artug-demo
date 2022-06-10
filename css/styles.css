@@ -1253,17 +1253,17 @@ main .flota-description h3 {
     }
 
     .article-servicios {
-        min-height: 400px;
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 10px 0px;
-        padding: 65px 0px;
+        padding: 25px 0px;
     }
 
     .article-servicios.medio {
-        min-height: 400px;
-        padding: 65px 0px;
+        min-height: 500px;
+        padding: 25px 0px;
     }
 
     /* ---------------- FLOTA ---------------- */
