@@ -1023,9 +1023,13 @@ main .flota-description h3 {
     }
 
     .listado-links {
-        height: 82.5vh;
+        height: 60.5vh;
         justify-content: space-evenly;
         margin-top: 1px;
+    }
+
+    .extendido {
+        padding-bottom: 8.2rem;
     }
 
     /* ----- FORM ----- */
