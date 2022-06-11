@@ -906,6 +906,10 @@ main .flota-description h3 {
 
 @media only screen and (max-width: 768px) {
     /* ---------- COMUNES A TODO EL SITIO ----------*/
+    .w-75 {
+        width: 76% !important;
+    }
+
     .titular-regular {
         font-size: 32px;
         line-height: 1.2;
