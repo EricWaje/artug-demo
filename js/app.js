@@ -17,7 +17,7 @@ links.forEach((item) => {
         } else {
             el.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start',
+                block: 'center',
             });
         }
     });
