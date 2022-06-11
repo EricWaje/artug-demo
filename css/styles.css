@@ -1029,7 +1029,9 @@ main .flota-description h3 {
     }
 
     .extendido {
-        padding-bottom: 8.2rem;
+        padding-bottom: 11.8rem;
+        /* min-height: 95vh; */
+        transition: all 0.3s ease-in-out;
     }
 
     /* ----- FORM ----- */
