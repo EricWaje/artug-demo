@@ -131,6 +131,7 @@ html {
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
+    font-size: 52px;
 }
 
 .seccion-regular-contacto {
@@ -148,6 +149,7 @@ html {
         var(--unnamed-line-spacing-58) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
+    font-size: 52px;
 }
 
 .texto-chico {
@@ -203,6 +205,7 @@ html {
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
     margin-bottom: 0px;
+    font-size: 52px;
 }
 
 .titular-regular {
@@ -214,6 +217,7 @@ html {
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
     margin-bottom: 0px;
+    font-size: 52px;
 }
 
 /* ---------- ESTILOS COMUNES A TODAS LAS PAGINAS ---------- */
