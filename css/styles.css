@@ -36,6 +36,8 @@ html {
     --unnamed-font-size-28: 28px;
     --unnamed-font-size-32: 32px;
     --unnamed-font-size-42: 42px;
+    --unnamed-font-size-52: 52px;
+    --unnamed-font-size-60: 60px;
     --unnamed-font-size-62: 62px;
     --unnamed-character-spacing-0: 0px;
     --unnamed-character-spacing-0-12: 0.12px;
@@ -46,6 +48,7 @@ html {
     --unnamed-line-spacing-36: 36px;
     --unnamed-line-spacing-38: 38px;
     --unnamed-line-spacing-52: 52px;
+    --unnamed-line-spacing-58: 58px;
     --unnamed-line-spacing-72: 72px;
     --unnamed-text-transform-titlecase: titlecase;
 }
@@ -123,8 +126,8 @@ html {
 
 .seccion-regular {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
-        var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
+        var(--unnamed-font-weight-normal) var(--unnamed-font-size-52) /
+        var(--unnamed-line-spacing-58) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
@@ -133,7 +136,7 @@ html {
 .seccion-regular-contacto {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-42) /
-        var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
+        var(--unnamed-line-spacing-58) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
     margin-bottom: 0px;
@@ -141,8 +144,8 @@ html {
 
 .seccion-bold {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) var(--unnamed-font-size-62) /
-        var(--unnamed-line-spacing-72) var(--unnamed-font-family-open-sans);
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-52) /
+        var(--unnamed-line-spacing-58) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-ffffff);
 }
@@ -185,7 +188,7 @@ html {
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: var(--unnamed-font-size-42);
-    line-height: var(--unnamed-line-spacing-72);
+    line-height: var(--unnamed-line-spacing-58);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
     margin-bottom: 0px;
@@ -195,8 +198,8 @@ html {
     font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-62);
-    line-height: var(--unnamed-line-spacing-72);
+    font-size: var(--unnamed-font-size-52);
+    line-height: var(--unnamed-line-spacing-58);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
     margin-bottom: 0px;
@@ -206,8 +209,8 @@ html {
     font-family: var(--unnamed-font-family-open-sans);
     font-style: var(--unnamed-font-style-normal);
     font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-62);
-    line-height: var(--unnamed-line-spacing-72);
+    font-size: var(--unnamed-font-size-52);
+    line-height: var(--unnamed-line-spacing-58);
     letter-spacing: var(--unnamed-character-spacing-0-31);
     color: var(--unnamed-color-176bfc);
     margin-bottom: 0px;
@@ -234,7 +237,7 @@ html {
 
 .nav-link {
     font: var(--unnamed-font-style-normal) 400 var(--unnamed-font-weight-normal)
-        26px / var(--unnamed-line-spacing-52)
+        24px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-open-sans);
     color: var(--unnamed-color-ffffff);
     margin: 0px 16px;
@@ -244,14 +247,14 @@ html {
 
 .nav-link:hover {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 26px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-weight-normal) 24px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-open-sans);
     color: var(--unnamed-color-ffffff);
 }
 
 .navbar-nav .nav-link.active {
     font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-bold) 26px / var(--unnamed-line-spacing-52)
+        var(--unnamed-font-weight-bold) 24px / var(--unnamed-line-spacing-52)
         var(--unnamed-font-family-open-sans);
     color: white;
 }
@@ -962,7 +965,7 @@ main .flota-description h3 {
 
     .seccion-regular {
         font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-normal) var(--unnamed-font-size-62) /
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-52) /
             var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-31);
         font-size: 26px;
@@ -971,7 +974,7 @@ main .flota-description h3 {
 
     .seccion-bold {
         font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-bold) var(--unnamed-font-size-62) /
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-52) /
             var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-31);
         font-size: 26px;
