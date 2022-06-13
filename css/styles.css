@@ -937,6 +937,7 @@ main .flota-description h3 {
             var(--unnamed-line-spacing-22) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-16);
         color: var(--unnamed-color-176bfc);
+        font-size: 32px;
     }
 
     .titular {
