@@ -4,6 +4,9 @@ const ul = document.getElementById('menu-ul');
 const menu = document.getElementById('navbarSupportedContent');
 const politicas = document.getElementById('em-po');
 const links = document.querySelectorAll('.scroll-to');
+const uno = document.getElementById('barraUno');
+const dos = document.getElementById('barraDos');
+const tres = document.getElementById('barraTres');
 
 links.forEach((item) => {
     item.addEventListener('click', () => {
@@ -44,10 +47,6 @@ window.onscroll = function () {
 };
 
 const modificarMenu = () => {
-    const uno = document.getElementById('barraUno');
-    const dos = document.getElementById('barraDos');
-    const tres = document.getElementById('barraTres');
-
     if (dos.style.opacity !== '0') {
         uno.style.transform = 'translateY(10px) rotate(45deg)';
         uno.style.transition = 'all 0.2s ease-in-out';
@@ -68,6 +67,12 @@ const modificarMenu = () => {
 const cerrarMenu = () => {
     if (menu.classList.contains('show')) {
         menu.classList.remove('show');
+        uno.style.transform = 'translateY(0px) rotate(0deg)';
+        tres.style.transform = 'translateY(0px) rotate(0deg)';
+        dos.style.opacity = '1';
+        dos.style.transition = 'all 0.2s ease-in-out';
+        tres.style.transition = 'all 0.2s ease-in-out';
+        uno.style.transition = 'all 0.2s ease-in-out';
     }
 };
 

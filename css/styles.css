@@ -483,6 +483,7 @@ footer img {
 #contenedor-slides {
     height: 420px;
     width: 100%;
+    /* width: 100px; */
     margin: 0 15px;
     overflow: hidden;
     position: relative;
@@ -557,7 +558,7 @@ footer img {
 #contenedor-slides:hover .box-datos {
     transform: translateY(-343px);
     width: 100%;
-    background-color: #176bfc7e;
+    background-color: hsla(218, 97%, 54%, 0.7);
 }
 
 /* -------- FIN SLIDE --------- */
@@ -910,21 +911,30 @@ main .flota-description h3 {
         width: 76% !important;
     }
 
+    .seccion-regular-mobile {
+        line-height: var(--unnamed-line-spacing-22);
+    }
+
+    .seccion-bold-mobile {
+        line-height: var(--unnamed-line-spacing-22);
+        font-weight: 700;
+    }
+
     .titular-regular {
         font-size: 32px;
-        line-height: 1.2;
+        line-height: var(--unnamed-line-spacing-22);
     }
     .titular-bold {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-bold) var(--unnamed-font-size-32) /
-            var(--unnamed-line-spacing-38) var(--unnamed-font-family-open-sans);
+            var(--unnamed-line-spacing-22) var(--unnamed-font-family-open-sans);
         letter-spacing: var(--unnamed-character-spacing-0-16);
         color: var(--unnamed-color-176bfc);
     }
 
     .titular {
         font-size: 26px;
-        line-height: var(--unnamed-line-spacing-36);
+        line-height: var(--unnamed-line-spacing-22);
         letter-spacing: var(--unnamed-character-spacing-0-31);
         /* padding-top: 50px; */
         /* padding-bottom: 15px; */
@@ -937,6 +947,7 @@ main .flota-description h3 {
     .texto {
         font-size: 16px;
         margin-top: 5px;
+        line-height: var(--unnamed-line-spacing-22);
     }
 
     .texto-chico {
@@ -945,6 +956,7 @@ main .flota-description h3 {
         font-family: 'Helvetica neue';
         color: var(--tipografia);
         letter-spacing: var(--unnamed-character-spacing-0-08);
+        line-height: var(--unnamed-line-spacing-22);
         text-align: left;
     }
 
@@ -1112,6 +1124,7 @@ main .flota-description h3 {
 
     #home-servicios .accordion-body {
         font-size: 16px;
+        line-height: var(--unnamed-line-spacing-22);
     }
 
     #home-clientes {
@@ -1175,10 +1188,12 @@ main .flota-description h3 {
 
     #empresa-politica h4 {
         font-size: 14px;
+        line-height: var(--unnamed-line-spacing-22);
     }
 
     #empresa-politica p {
         font-size: 14px;
+        line-height: var(--unnamed-line-spacing-22);
     }
 
     #empresa-cards {
@@ -1196,7 +1211,7 @@ main .flota-description h3 {
     #empresa-cards .container-box p {
         font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-normal) 16px /
-            var(--unnamed-line-spacing-32) var(--unnamed-font-family-roboto);
+            var(--unnamed-line-spacing-22) var(--unnamed-font-family-roboto);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--unnamed-color-176bfc);
     }
@@ -1311,6 +1326,7 @@ main .flota-description h3 {
 
     main .flota-description h3 {
         font-size: 16px;
+        line-height: var(--unnamed-line-spacing-22);
     }
 
     /* --------------- CONTACTO.HTML ---------------*/
