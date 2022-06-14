@@ -499,7 +499,6 @@ footer img {
     height: 420px;
     width: 100%;
     object-fit: cover;
-    border-radius: 3px;
 }
 #contenedor-slides .box-datos {
     position: absolute;
@@ -565,7 +564,7 @@ footer img {
 #contenedor-slides:hover .box-datos {
     transform: translateY(-343px);
     width: 100%;
-    background-color: hsla(218, 97%, 54%, 0.7);
+    background-color: hsla(218, 97%, 54%, 0.8);
 }
 
 /* -------- FIN SLIDE --------- */
