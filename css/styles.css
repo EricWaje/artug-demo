@@ -519,6 +519,7 @@ footer img {
         var(--unnamed-line-spacing-52) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0-16);
     color: var(--unnamed-color-ffffff);
+    font-size: 26px;
     font-weight: 200;
     margin-bottom: 0px;
 }
