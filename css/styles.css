@@ -400,7 +400,7 @@ footer img {
 
 /* --------------------------- INDEX.HTML -----------------------------------*/
 #home {
-    background-image: url('../media/fondo_home.svg');
+    background-image: url('../media/home/fondo-home.png');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -1110,7 +1110,7 @@ main .flota-description h3 {
 
     /* ------------------- INDEX.HTML ---------------------*/
     #home {
-        background-image: url('../media/fondo_home.svg');
+        background-image: url('../media/home/fondo-home.png');
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 60vh;
