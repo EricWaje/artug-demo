@@ -598,7 +598,7 @@ footer img {
 /* --------------------------- EMPRESA.HTML -----------------------------------*/
 
 #empresa {
-    background-image: url('../media/Fondo_Servicios.png');
+    background-image: url('../media/nosotros/cabecera_nosotros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 64vh;
@@ -696,7 +696,7 @@ footer img {
 /* --------------------------- SERVICIOS.HTML -----------------------------------*/
 
 #servicios-header {
-    background-image: url('../media/Fondo_Servicios.png');
+    background-image: url('../media/servicios/Cabecera_servicios.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 64vh;
@@ -788,7 +788,7 @@ footer img {
 }
 /* --------------------------- FLOTA.HTML -----------------------------------*/
 #flota-header {
-    background-image: url('../media/Fondo_Servicios.png');
+    background-image: url('../media/flota/cabecera_Flota.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 64vh;
@@ -1157,10 +1157,11 @@ main .flota-description h3 {
     }
 
     #empresa-mobile {
-        background-image: url('../media/Fondo_Servicios.png');
+        background-image: url('../media/nosotros/cabecera_nosotros.jpg');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
+        background-position: 30% 100%;
         min-height: 30vh;
         display: flex;
         align-items: center;
@@ -1233,7 +1234,7 @@ main .flota-description h3 {
     }
 
     #servicios-mobile {
-        background-image: url('../media/Fondo_Servicios.png');
+        background-image: url('../media/servicios/Cabecera_servicios.jpg');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
@@ -1303,7 +1304,7 @@ main .flota-description h3 {
     }
 
     #flota-mobile {
-        background-image: url('../media/Fondo_Servicios.png');
+        background-image: url('../media/flota/cabecera_Flota.jpg');
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
@@ -1355,78 +1356,3 @@ main .flota-description h3 {
         align-items: center;
     }
 }
-
-/* @media only screen and (max-width: 767px) {
-    #empresa-mobile {
-        min-height: 65vh;
-    }
-    #servicios-mobile {
-        min-height: 65vh;
-    }
-    #flota-mobile {
-        min-height: 65vh;
-    }
-    #contacto-mobile {
-        min-height: 65vh;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #empresa-mobile {
-        min-height: 38vh;
-    }
-    #servicios-mobile {
-        min-height: 38vh;
-    }
-    #flota-mobile {
-        min-height: 38vh;
-    }
-    #contacto-mobile {
-        min-height: 38vh;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #empresa-mobile {
-        min-height: 32vh;
-    }
-    #servicios-mobile {
-        min-height: 32vh;
-    }
-    #flota-mobile {
-        min-height: 32vh;
-    }
-    #contacto-mobile {
-        min-height: 32vh;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #empresa-mobile {
-        min-height: 32vh;
-    }
-    #servicios-mobile {
-        min-height: 32vh;
-    }
-    #flota-mobile {
-        min-height: 32vh;
-    }
-    #contacto-mobile {
-        min-height: 32vh;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    #empresa-mobile {
-        min-height: 25vh;
-    }
-    #servicios-mobile {
-        min-height: 25vh;
-    }
-    #flota-mobile {
-        min-height: 25vh;
-    }
-    #contacto-mobile {
-        min-height: 25vh;
-    }
-} */
