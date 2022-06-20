@@ -269,6 +269,10 @@ html {
     margin: 0px 10px;
 }
 
+.link-arrow {
+    text-decoration: none;
+}
+
 /* ---- FORMULARIO ----- */
 
 form {
