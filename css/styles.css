@@ -413,6 +413,47 @@ footer img {
     justify-content: space-between;
     position: relative;
     z-index: 8000;
+    animation: fondo infinite normal 15s ease-in-out;
+}
+
+@keyframes fondo {
+    0% {
+        background-image: url('../media/home/fondo-home-querandi.jpeg');
+    }
+    20% {
+        background-image: url('../media/home/fondo-home-querandi.jpeg');
+    }
+    30% {
+        background-image: url('../media/home/fondo-home-querandi.jpeg');
+    }
+    33% {
+        background-image: url('../media/home/fondo-home-rua.jpeg');
+    }
+    40% {
+        background-image: url('../media/home/fondo-home-rua.jpeg');
+    }
+    50% {
+        background-image: url('../media/home/fondo-home-rua.jpeg');
+    }
+    60% {
+        background-image: url('../media/home/fondo-home-rua.jpeg');
+    }
+    66% {
+        background-image: url('../media/home/fondo-home.png');
+    }
+    70% {
+        background-image: url('../media/home/fondo-home.png');
+    }
+    80% {
+        background-image: url('../media/home/fondo-home.png');
+    }
+    94% {
+        background-image: url('../media/home/fondo-home.png');
+    }
+
+    100% {
+        background-image: url('../media/home/fondo-home-querandi.jpeg');
+    }
 }
 
 #home .scroll {
@@ -1124,6 +1165,7 @@ main .flota-description h3 {
         justify-content: space-between;
         position: relative;
         z-index: 8000;
+        animation: none;
     }
 
     .accordion {
