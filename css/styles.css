@@ -413,10 +413,10 @@ footer img {
     justify-content: space-between;
     position: relative;
     z-index: 8000;
-    animation: fondo infinite normal 15s ease-in-out;
+    /* animation: fondo infinite normal 15s ease-in-out; */
 }
 
-@keyframes fondo {
+/* @keyframes fondo {
     0% {
         background-image: url('../media/home/fondo-home-querandi.jpeg');
     }
@@ -454,7 +454,7 @@ footer img {
     100% {
         background-image: url('../media/home/fondo-home-querandi.jpeg');
     }
-}
+} */
 
 #home .scroll {
     position: relative;
@@ -1165,7 +1165,7 @@ main .flota-description h3 {
         justify-content: space-between;
         position: relative;
         z-index: 8000;
-        animation: none;
+        /* animation: none; */
     }
 
     .accordion {
