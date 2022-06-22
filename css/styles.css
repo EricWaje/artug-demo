@@ -580,9 +580,9 @@ footer img {
 #contenedor-slides .box-datos .info {
     display: flex;
     align-items: center;
-    width: 85%;
+    width: 90%;
     z-index: 200;
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 6px 0px;
 }
 
 #contenedor-slides .box-datos h3 {
@@ -598,7 +598,7 @@ footer img {
 #contenedor-slides .box-datos p {
     font: var(--unnamed-font-style-normal) normal
         var(--unnamed-font-weight-normal) var(--unnamed-font-size-32) /
-        var(--unnamed-line-spacing-36) var(--unnamed-font-family-open-sans);
+        var(--unnamed-line-spacing-20) var(--unnamed-font-family-open-sans);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: white;
     font-size: 18px;
